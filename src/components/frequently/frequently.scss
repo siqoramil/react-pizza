@@ -1,0 +1,28 @@
+.frequently {
+    padding: 50px 0;
+
+    .carousel {
+        .c_cards {
+            padding: 0 100px;
+            .c_row {
+                .c_col {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    column-gap: 25px;
+                    box-shadow: 1px 1px 10px #aaa;
+
+                    img {
+                        width: 125px;
+                        height: 125px;
+                    }
+
+                    h3 {
+                        span {}
+                    }
+                }
+            }
+        }
+
+    }
+}

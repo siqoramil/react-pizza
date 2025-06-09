@@ -1,0 +1,9 @@
+.card-wrap {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+
+    .card {
+        padding: 10px;
+    }
+}
