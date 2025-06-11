@@ -1,16 +1,30 @@
+@mixin dF {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .frequently {
     padding: 50px 0;
 
     .carousel {
         .c_cards {
-            padding: 0 100px;
+            padding: 50px 0;
+
             .c_row {
+                @include dF();
+                gap: 50px;
+
                 .c_col {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    column-gap: 25px;
-                    box-shadow: 1px 1px 10px #aaa;
+                    padding: 10px 40px;
+                    @include dF();
+                    gap: 8px;
+                    box-shadow: 1px 1px 8px #ccc;
+                    border-radius: 20px;
+
+                    &:hover {
+                        box-shadow: 1px 1px 12px #aaa;
+                    }
 
                     img {
                         width: 125px;

@@ -1,39 +1,34 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { Card } from 'antd';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchPizzas } from '../../redux/pizza/card.thunk';
+import type { RootState, AppDispatch } from '../../redux/store';
 import './cards.scss';
 
 const { Meta } = Card;
 
-interface dataType {
-  id: number;
-  title: string;
-  image: string;
-  price: string;
-  desc: string;
-}
-
-const API: string = import.meta.env.VITE_SOME_KEY;
-
 export const Cards = () => {
-  const [data, setData] = useState<dataType[] | null>(null);
+  const dispatch = useDispatch<AppDispatch>();
+  const { pizza, loading, error } = useSelector(
+    (state: RootState) => state.pizza
+  );
 
   useEffect(() => {
-    fetch(`${API}/data`)
-      .then((res) => res.json())
-      // .then(res => console.log(res))
-      .then((data) => setData(data))
-      .catch((err) => console.log(err));
-  });
+    dispatch(fetchPizzas());
+  }, [dispatch]);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error}</p>;
 
   return (
     <div className="card-wrap">
-      {data &&
-        data.map((piz) => (
+      {pizza &&
+        pizza.map((piz: any) => (
           <Card
             hoverable
             style={{ width: 240 }}
             cover={<img src={piz.image} alt={piz.image} />}
-            className='card'
+            className="card"
           >
             <Meta title={piz.title} description={piz.desc} />
             <br />
