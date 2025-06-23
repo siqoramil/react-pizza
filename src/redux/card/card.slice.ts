@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { cardsFetch } from './card.thunk';
-import { type PizzaT } from './card.types';
+import { type PizzaT } from './card.type';
 
 interface CardState {
   data: PizzaT[];

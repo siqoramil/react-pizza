@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import { advFetch } from './adv.thunk';
-import { type PizzaT } from './adv.types';
+import { type PizzaT } from './adv.type';
 
 interface AdvState {
   data: PizzaT[];
