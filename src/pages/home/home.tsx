@@ -1,4 +1,4 @@
-import { Frequently, Navbar, CarouselComp } from '../../components';
+import { Frequently, Navbar, CarouselComp, Cards } from '../../components';
 
 export const Home = () => {
   return (
@@ -6,6 +6,7 @@ export const Home = () => {
       <Navbar />
       <CarouselComp />
       <Frequently />
+      <Cards />
     </>
   );
 };

@@ -1,0 +1,9 @@
+.adv-wrap {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+
+    .adv {
+        padding: 10px;
+    }
+}

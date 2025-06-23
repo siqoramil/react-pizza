@@ -21,7 +21,7 @@ export const CarouselComp = () => {
       {slides.map((group, index) => (
         <div key={index} className='carousels'>
           <Row gutter={16} justify="center" className='c_row'>
-            {group.map((imgSrc, idx) => (
+            {group?.map((imgSrc, idx) => (
               <Col key={idx} className='c_col'>
                 <img
                   src={imgSrc}

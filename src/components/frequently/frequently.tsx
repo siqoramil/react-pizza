@@ -33,10 +33,10 @@ export const Frequently = () => {
   return (
     <div className="frequently">
       <Carousel className="carousel" autoplay arrows infinite>
-        {slides.map((group, index) => (
+        {slides?.map((group, index) => (
           <div key={index} className="c_cards">
             <Row gutter={16} justify="center" className="c_row">
-              {group.map((p: PizzasTypes, idx) => (
+              {group?.map((p: PizzasTypes, idx) => (
                 <Col key={idx} className="c_col">
                   <img src={p.image} alt={p.title} />
                   <h3>{p.title} <span>{p.price}</span></h3>

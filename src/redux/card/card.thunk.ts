@@ -4,7 +4,7 @@ import { type PizzaT } from './card.types';
 
 const API: string = import.meta.env.VITE_SOME_KEY;
 
-export const fetchPizzas = createAsyncThunk('data/pizza', async () => {
-  const response = await axios.get(`${API}`);
+export const cardsFetch = createAsyncThunk('data/pizza', async () => {
+  const response = await axios.get<PizzaT[]>(`${API}/data`);
   return response.data as PizzaT[];
 });

@@ -1,38 +1,46 @@
 import { useEffect } from 'react';
 import { Card } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchPizzas } from '../../redux/pizza/card.thunk';
+import { cardsFetch } from '../../redux/card/card.thunk';
 import type { RootState, AppDispatch } from '../../redux/store';
+import type { PizzaT } from '../../redux/card/card.types';
+import { Button } from 'antd';
+import { HeartOutlined, ShoppingCartOutlined } from '@ant-design/icons';
 import './cards.scss';
 
 const { Meta } = Card;
 
 export const Cards = () => {
   const dispatch = useDispatch<AppDispatch>();
-  const { pizza, loading, error } = useSelector(
-    (state: RootState) => state.pizza
+  const { data , loading, error } = useSelector(
+    (state: RootState) => state.card
   );
 
   useEffect(() => {
-    dispatch(fetchPizzas());
-  }, [dispatch]);
+    dispatch(cardsFetch());
+  }, []);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
 
   return (
-    <div className="card-wrap">
-      {pizza &&
-        pizza.map((piz: any) => (
+    <div className="cards-wrap">
+      {Array.isArray(data) &&
+        data?.map((piz: PizzaT) => (
           <Card
+            key={piz.id}
             hoverable
             style={{ width: 240 }}
             cover={<img src={piz.image} alt={piz.image} />}
-            className="card"
+            className="cards"
           >
             <Meta title={piz.title} description={piz.desc} />
             <br />
             <span>{piz.price} so'm</span>
+            <div className="btns">
+              <Button type="primary" icon={<HeartOutlined />} size='large' />
+              <Button type="primary" icon={<ShoppingCartOutlined />} size='large' />
+            </div>
           </Card>
         ))}
     </div>

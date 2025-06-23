@@ -1,38 +1,38 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { fetchPizzas } from './card.thunk';
+import { cardsFetch } from './card.thunk';
 import { type PizzaT } from './card.types';
 
-interface PizzaState {
-  pizza: PizzaT[];
+interface CardState {
+  data: PizzaT[];
   loading: boolean;
   error: string | null;
 }
 
-const initialState: PizzaState = {
-  pizza: [],
+const initialState: CardState = {
+  data: [],
   loading: false,
   error: null,
 };
 
-const PizzasSlice = createSlice({
+const CardSlice = createSlice({
   name: 'pizza',
   initialState,
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(fetchPizzas.pending, (state) => {
+      .addCase(cardsFetch.pending, (state) => {
         state.loading = true;
         state.error = null;
       })
-      .addCase(fetchPizzas.fulfilled, (state, action) => {
+      .addCase(cardsFetch.fulfilled, (state, action) => {
         state.loading = false;
-        state.pizza = action.payload;
+        state.data = action.payload;
       })
-      .addCase(fetchPizzas.rejected, (state, action) => {
+      .addCase(cardsFetch.rejected, (state, action) => {
         state.loading = false;
         state.error = action.error.message || 'Something went wrong';
       });
   },
 });
 
-export default PizzasSlice.reducer;
+export default CardSlice.reducer;

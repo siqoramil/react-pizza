@@ -1,9 +1,16 @@
-.card-wrap {
+.cards-wrap {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 50px;
 
-    .card {
+    .cards {
         padding: 10px;
+
+        .btns {
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
 }

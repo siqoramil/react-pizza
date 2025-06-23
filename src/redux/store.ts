@@ -1,10 +1,11 @@
-// src/app/store.ts
 import { configureStore } from '@reduxjs/toolkit';
-import pizzaReducer from './pizza/card.slice';
+import advReducer from './adv/adv.slice';
+import cardReducer from './card/card.slice';
 
 export const store = configureStore({
   reducer: {
-    pizza: pizzaReducer,
+    adv: advReducer,
+    card: cardReducer,
   },
 });
 
