@@ -32,7 +32,7 @@ const basketSlice = createSlice({
       )
       .addCase(fetchBasket.rejected, (state, action) => {
         state.loading = false;
-        state.error = action.error.message || 'Xatolik';
+        state.error = action.error.message || 'Ошибка';
       })
       .addCase(
         addToBasket.fulfilled,

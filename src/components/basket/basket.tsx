@@ -5,7 +5,7 @@ import type { AppDispatch, RootState } from '../../redux/store';
 import { fetchBasket, removeFromBasket } from '../../redux/basket/basket.thunk';
 
 type PropsType = {
-  openb: any;
+  openb: boolean;
   setOpenb: (val: boolean) => void;
 };
 
@@ -17,7 +17,7 @@ export const Basket = ({ openb, setOpenb }: PropsType) => {
     if (openb) {
       dispatch(fetchBasket());
     }
-  }, [openb]);
+  }, []);
 
   return (
     <Drawer title="Корзина" onClose={() => setOpenb(false)} open={openb}>

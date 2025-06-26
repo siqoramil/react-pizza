@@ -1,84 +1,84 @@
 {
   "data": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Навруз",
       "image": "https://media.dodostatic.net/image/r:292x292/0195ae18b955759d8b22125578545e4c.jpg",
       "price": 43000,
       "desc": "Мясная пицца с тушеной говядиной, колбасками, пицца-соусом, красным луком, моцареллой и маринованными огурчиками с поливкой из горчичного соуса"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Баварская",
       "price": 43000,
       "image": "https://media.dodostatic.net/image/r:292x292/01945f8b83c47656afab822b4ef315e6.jpg",
       "desc": "Баварские колбаски, маринованные огурчики, красный лук, томаты, горчичный соус, моцарелла, фирменный томатный соус"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Чилл Грилл",
       "price": 43000,
       "image": "https://media.dodostatic.net/image/r:292x292/01945f33348274af854e32e23fa3147a.jpg",
       "desc": "lorem ipsum dolor sit amet"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Пицца Барака",
       "price": 43000,
       "image": "https://media.dodostatic.net/image/r:292x292/019613d222d37299af8d334da03c0da8.jpg",
       "desc": "lorem ipsum dolor sit amet"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Жюльен",
       "price": 43000,
       "image": "https://media.dodostatic.net/image/r:292x292/0195f593c11876cd886af0a034a96e57.jpg",
       "desc": "lorem ipsum dolor sit amet"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Маргарита",
       "price": 43000,
       "image": "https://media.dodostatic.net/image/r:292x292/11ee89722ed2d2f992155a94fa4d383a.jpg",
       "desc": "lorem ipsum dolor sit amet"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Индейка и сыр",
       "price": 43000,
       "image": "https://media.dodostatic.net/image/r:292x292/11ee8977d2824254a943008321e7f2e9.jpg",
       "desc": "lorem ipsum dolor sit amet"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Двойной Цыплёнок",
       "price": 43000,
       "image": "https://media.dodostatic.net/image/r:292x292/0193b01fbbe7704ba559683215e47c17.jpg",
       "desc": "lorem ipsum dolor sit amet"
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Песто",
       "price": 43000,
       "image": "https://media.dodostatic.net/image/r:292x292/0195f59128fb774a9a9b8c95ff6cfac6.jpg",
       "desc": "lorem ipsum dolor sit amet"
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "Вау! Донар",
       "price": 43000,
       "image": "https://media.dodostatic.net/image/r:292x292/0195ff38f1a173dd98ba59b6123fdfcc.jpg",
       "desc": "lorem ipsum dolor sit amet"
     },
     {
-      "id": 11,
+      "id": "11",
       "title": "Пицца из половинок",
       "price": 43000,
       "image": "https://media.dodostatic.net/image/r:292x292/11eee2044ca44bf799c868da91888281.jpg",
       "desc": "lorem ipsum dolor sit amet"
     },
     {
-      "id": 12,
+      "id": "12",
       "title": "Чиззи Чеддер",
       "price": 43000,
       "image": "https://media.dodostatic.net/image/r:292x292/11ee7d6264845c8fb0b7e3bcfca7b15e.jpg",
@@ -88,17 +88,24 @@
   "favorites": [],
   "basket": [
     {
-      "id": "4f56d791-d40f-4442-9f77-433cd9d0d8cd",
-      "title": "Баварская",
+      "id": "3736900f-d30a-4697-ae6f-4e10c883b17c",
+      "title": "Навруз",
+      "image": "https://media.dodostatic.net/image/r:292x292/0195ae18b955759d8b22125578545e4c.jpg",
       "price": 43000,
-      "image": "https://media.dodostatic.net/image/r:292x292/01945f8b83c47656afab822b4ef315e6.jpg",
-      "desc": "Баварские колбаски, маринованные огурчики, красный лук, томаты, горчичный соус, моцарелла, фирменный томатный соус"
+      "desc": "Мясная пицца с тушеной говядиной, колбасками, пицца-соусом, красным луком, моцареллой и маринованными огурчиками с поливкой из горчичного соуса"
     },
     {
-      "id": "33addbb9-ac49-4cee-9878-a067bf6b363c",
-      "title": "Чилл Грилл",
+      "id": "4a55f4ab-cbcf-457a-883d-d963113c66b4",
+      "title": "Жюльен",
       "price": 43000,
-      "image": "https://media.dodostatic.net/image/r:292x292/01945f33348274af854e32e23fa3147a.jpg",
+      "image": "https://media.dodostatic.net/image/r:292x292/0195f593c11876cd886af0a034a96e57.jpg",
+      "desc": "lorem ipsum dolor sit amet"
+    },
+    {
+      "id": "c826aa05-54f8-42a6-a97e-0efed2d448cd",
+      "title": "Маргарита",
+      "price": 43000,
+      "image": "https://media.dodostatic.net/image/r:292x292/11ee89722ed2d2f992155a94fa4d383a.jpg",
       "desc": "lorem ipsum dolor sit amet"
     }
   ]

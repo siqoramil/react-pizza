@@ -5,7 +5,7 @@ import { fetchFavorites } from '../../redux/favorites/favorites.thunk';
 import type { RootState, AppDispatch } from '../../redux/store';
 
 type PropsType = {
-  openf: any;
+  openf: boolean;
   setOpenf: (val: boolean) => void;
 };
 
@@ -18,7 +18,7 @@ export const Favorites = ({ openf, setOpenf }: PropsType) => {
   }, [openf]);
 
   return (
-    <Drawer title="Sevimlilar" open={openf} onClose={() => setOpenf(false)}>
+    <Drawer title="Избранное" open={openf} onClose={() => setOpenf(false)}>
       {loading ? (
         <Spin />
       ) : (
