@@ -85,7 +85,15 @@
       "desc": "lorem ipsum dolor sit amet"
     }
   ],
-  "favorites": [],
+  "favorites": [
+    {
+      "id": "abffe825-2757-40b6-8e80-61a75cd4132e",
+      "title": "Баварская",
+      "price": 43000,
+      "image": "https://media.dodostatic.net/image/r:292x292/01945f8b83c47656afab822b4ef315e6.jpg",
+      "desc": "Баварские колбаски, маринованные огурчики, красный лук, томаты, горчичный соус, моцарелла, фирменный томатный соус"
+    }
+  ],
   "basket": [
     {
       "id": "3736900f-d30a-4697-ae6f-4e10c883b17c",
@@ -107,6 +115,34 @@
       "price": 43000,
       "image": "https://media.dodostatic.net/image/r:292x292/11ee89722ed2d2f992155a94fa4d383a.jpg",
       "desc": "lorem ipsum dolor sit amet"
+    },
+    {
+      "id": "dc8a82b1-97c9-4d2a-a553-4d1ff1f190ec",
+      "title": "Баварская",
+      "price": 43000,
+      "image": "https://media.dodostatic.net/image/r:292x292/01945f8b83c47656afab822b4ef315e6.jpg",
+      "desc": "Баварские колбаски, маринованные огурчики, красный лук, томаты, горчичный соус, моцарелла, фирменный томатный соус"
+    },
+    {
+      "id": "d52effa5-cd57-46aa-b7ab-f27bc58a9f01",
+      "title": "Чилл Грилл",
+      "price": 43000,
+      "image": "https://media.dodostatic.net/image/r:292x292/01945f33348274af854e32e23fa3147a.jpg",
+      "desc": "lorem ipsum dolor sit amet"
+    },
+    {
+      "id": "afc456fa-a651-4fb1-a554-2727d634160a",
+      "title": "Баварская",
+      "price": 43000,
+      "image": "https://media.dodostatic.net/image/r:292x292/01945f8b83c47656afab822b4ef315e6.jpg",
+      "desc": "Баварские колбаски, маринованные огурчики, красный лук, томаты, горчичный соус, моцарелла, фирменный томатный соус"
+    },
+    {
+      "id": "bd58ccff-9946-46d1-9646-77e96f51bac3",
+      "title": "Баварская",
+      "price": 43000,
+      "image": "https://media.dodostatic.net/image/r:292x292/01945f8b83c47656afab822b4ef315e6.jpg",
+      "desc": "Баварские колбаски, маринованные огурчики, красный лук, томаты, горчичный соус, моцарелла, фирменный томатный соус"
     }
   ]
 }

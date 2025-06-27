@@ -7,7 +7,7 @@ export const addToFavorites = createAsyncThunk(
   'favorites/addToFavorites',
   async (pizza: PizzaT) => {
     const newItem = { ...pizza, id: uuidv4() };
-    const res = await axios.post('http://localhost:3000/basket', newItem);
+    const res = await axios.post('http://localhost:3000/favorites', newItem);
     return res.data;
   }
 );

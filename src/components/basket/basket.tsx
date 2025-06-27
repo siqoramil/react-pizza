@@ -1,8 +1,8 @@
-import { Drawer, Card, Button, Spin } from 'antd';
 import { useEffect } from 'react';
+import { Drawer, Card, Button, Spin } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
-import type { AppDispatch, RootState } from '../../redux/store';
 import { fetchBasket, removeFromBasket } from '../../redux/basket/basket.thunk';
+import type { AppDispatch, RootState } from '../../redux/store';
 
 type PropsType = {
   openb: boolean;
@@ -41,7 +41,7 @@ export const Basket = ({ openb, setOpenb }: PropsType) => {
             ]}
           >
             <Card.Meta title={item.title} description={item.desc} />
-            <p>{item.price} сум</p>
+            <p>{item.price} Сум</p>
           </Card>
         ))
       )}

@@ -1,6 +1,6 @@
-import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
-import type { PizzaT } from './basket.type';
+import { type PayloadAction, createSlice } from '@reduxjs/toolkit';
 import { fetchBasket, addToBasket, removeFromBasket } from './basket.thunk';
+import type { PizzaT } from './basket.type';
 
 type BasketState = {
   items: PizzaT[];

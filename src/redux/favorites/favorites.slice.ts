@@ -1,10 +1,10 @@
-import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
-import type { PizzaT } from './favorites.type';
+import { type PayloadAction, createSlice } from '@reduxjs/toolkit';
 import {
   fetchFavorites,
   addToFavorites,
   removeFromFavorites,
 } from './favorites.thunk';
+import type { PizzaT } from './favorites.type';
 
 type FavoritesState = {
   items: PizzaT[];
@@ -34,6 +34,10 @@ const favoritesSlice = createSlice({
           state.loading = false;
         }
       )
+      .addCase(fetchFavorites.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.error.message || 'Ошибка';
+      })
       .addCase(
         addToFavorites.fulfilled,
         (state, action: PayloadAction<PizzaT>) => {
