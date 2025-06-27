@@ -1,6 +1,7 @@
+@use '../../styles/mixin.scss' as m;
+
 nav {
-    display: flex;
-    align-items: center;
+    @include m.dFlex;
     justify-content: space-between;
     padding: 4px 16px;
     background-color: #eee;
@@ -9,11 +10,7 @@ nav {
         width: 120px;
     }
 
-    .nav-center {
+    .nav-center {}
 
-    }
-
-    .nav-right {
-
-    }
+    .nav-right {}
 }

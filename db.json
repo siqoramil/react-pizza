@@ -19,75 +19,82 @@
       "title": "Чилл Грилл",
       "price": 43000,
       "image": "https://media.dodostatic.net/image/r:292x292/01945f33348274af854e32e23fa3147a.jpg",
-      "desc": "lorem ipsum dolor sit amet"
+      "desc": "Цыпленок, соленые огурчики, красный лук, соус гриль, моцарелла, чеснок, фирменный соус альфредо"
     },
     {
       "id": "4",
       "title": "Пицца Барака",
       "price": 43000,
       "image": "https://media.dodostatic.net/image/r:292x292/019613d222d37299af8d334da03c0da8.jpg",
-      "desc": "lorem ipsum dolor sit amet"
+      "desc": "Томатный соус, тушеная говядина, моцарелла, красный лук, томаты и маринованные огурчики"
     },
     {
       "id": "5",
       "title": "Жюльен",
       "price": 43000,
       "image": "https://media.dodostatic.net/image/r:292x292/0195f593c11876cd886af0a034a96e57.jpg",
-      "desc": "lorem ipsum dolor sit amet"
+      "desc": "Нежный цыпленок, моцарелла, двойная порция шампиньонов, грибной соус, смесь сыров, чеснок, лук и сливочный соус альфредо"
     },
     {
       "id": "6",
       "title": "Маргарита",
       "price": 43000,
       "image": "https://media.dodostatic.net/image/r:292x292/11ee89722ed2d2f992155a94fa4d383a.jpg",
-      "desc": "lorem ipsum dolor sit amet"
+      "desc": "Томатный соус, увеличенная порция моцареллы, томаты, итальянские травы"
     },
     {
       "id": "7",
       "title": "Индейка и сыр",
       "price": 43000,
       "image": "https://media.dodostatic.net/image/r:292x292/11ee8977d2824254a943008321e7f2e9.jpg",
-      "desc": "lorem ipsum dolor sit amet"
+      "desc": "Ветчина из индейки, соус альфредо и нежный сыр моцарелла"
     },
     {
       "id": "8",
       "title": "Двойной Цыплёнок",
       "price": 43000,
       "image": "https://media.dodostatic.net/image/r:292x292/0193b01fbbe7704ba559683215e47c17.jpg",
-      "desc": "lorem ipsum dolor sit amet"
+      "desc": "Моцарелла из цельного молока, соус альфредо, вдвое больше цыплёнка — вдвое больше удовольствия"
     },
     {
       "id": "9",
       "title": "Песто",
       "price": 43000,
       "image": "https://media.dodostatic.net/image/r:292x292/0195f59128fb774a9a9b8c95ff6cfac6.jpg",
-      "desc": "lorem ipsum dolor sit amet"
+      "desc": "Соус песто, сливочный соус альфредо, двойная порция цыплёнка, кубики брынзы, томаты, моцарелла из натурального молока"
     },
     {
       "id": "10",
       "title": "Вау! Донар",
       "price": 43000,
       "image": "https://media.dodostatic.net/image/r:292x292/0195ff38f1a173dd98ba59b6123fdfcc.jpg",
-      "desc": "lorem ipsum dolor sit amet"
+      "desc": "Донарное мясо, моцарелла, пицца-соус, томаты, перец, лук под соусом гриль"
     },
     {
       "id": "11",
       "title": "Пицца из половинок",
       "price": 43000,
       "image": "https://media.dodostatic.net/image/r:292x292/11eee2044ca44bf799c868da91888281.jpg",
-      "desc": "lorem ipsum dolor sit amet"
+      "desc": "Соберите свою пиццу 35 см с двумя разными вкусами"
     },
     {
       "id": "12",
       "title": "Чиззи Чеддер",
       "price": 43000,
       "image": "https://media.dodostatic.net/image/r:292x292/11ee7d6264845c8fb0b7e3bcfca7b15e.jpg",
-      "desc": "lorem ipsum dolor sit amet"
+      "desc": "Ветчина из индейки, сыр чеддер и пармезан, сладкий перец, моцарелла, томатный соус"
     }
   ],
   "favorites": [
     {
       "id": "abffe825-2757-40b6-8e80-61a75cd4132e",
+      "title": "Баварская",
+      "price": 43000,
+      "image": "https://media.dodostatic.net/image/r:292x292/01945f8b83c47656afab822b4ef315e6.jpg",
+      "desc": "Баварские колбаски, маринованные огурчики, красный лук, томаты, горчичный соус, моцарелла, фирменный томатный соус"
+    },
+    {
+      "id": "60de10c9-819a-4cd9-9964-b25811a5a2a9",
       "title": "Баварская",
       "price": 43000,
       "image": "https://media.dodostatic.net/image/r:292x292/01945f8b83c47656afab822b4ef315e6.jpg",
@@ -139,6 +146,13 @@
     },
     {
       "id": "bd58ccff-9946-46d1-9646-77e96f51bac3",
+      "title": "Баварская",
+      "price": 43000,
+      "image": "https://media.dodostatic.net/image/r:292x292/01945f8b83c47656afab822b4ef315e6.jpg",
+      "desc": "Баварские колбаски, маринованные огурчики, красный лук, томаты, горчичный соус, моцарелла, фирменный томатный соус"
+    },
+    {
+      "id": "21eb9334-4f0b-4739-b743-e2a6c99f8b8c",
       "title": "Баварская",
       "price": 43000,
       "image": "https://media.dodostatic.net/image/r:292x292/01945f8b83c47656afab822b4ef315e6.jpg",

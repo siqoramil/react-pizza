@@ -1,8 +1,4 @@
-@mixin dF {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+@use '../../styles/mixin.scss' as m;
 
 .frequently {
     padding: 50px 0;
@@ -12,12 +8,12 @@
             padding: 50px 0;
 
             .c_row {
-                @include dF();
+                @include m.dFlex;
                 gap: 50px;
 
                 .c_col {
                     padding: 10px 40px;
-                    @include dF();
+                    @include m.dFlex;
                     gap: 8px;
                     box-shadow: 1px 1px 8px #ccc;
                     border-radius: 20px;

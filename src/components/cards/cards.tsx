@@ -31,26 +31,27 @@ export const Cards = () => {
           <Card
             key={piz.id}
             hoverable
-            style={{ width: 240 }}
             cover={<img src={piz.image} alt={piz.image} />}
             className="cards"
           >
             <Meta title={piz.title} description={piz.desc} />
             <br />
-            <span>{piz.price} Сум</span>
             <div className="btns">
-              <Button
-                type="primary"
-                icon={<HeartOutlined />}
-                size="large"
-                onClick={() => dispatch(addToFavorites(piz))}
-              />
-              <Button
-                type="primary"
-                icon={<ShoppingCartOutlined />}
-                size="large"
-                onClick={() => dispatch(addToBasket(piz))}
-              />
+              <span>{piz.price} Сум</span>
+              <div className="btn">
+                <Button
+                  type="text"
+                  icon={<HeartOutlined />}
+                  size="large"
+                  onClick={() => dispatch(addToFavorites(piz))}
+                />
+                <Button
+                  type="text"
+                  icon={<ShoppingCartOutlined />}
+                  size="large"
+                  onClick={() => dispatch(addToBasket(piz))}
+                />
+              </div>
             </div>
           </Card>
         ))}
